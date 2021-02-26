@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Mail</string>
+
+    <string name="label_title_notes">Title</string>
+    <string name="add_word">ic add</string>
+
+    <!--    Bottom Navigation Bar-->
+    <string name="bnv_home">Inbox</string>
+    <string name="bnv_draft">Draft</string>
+    <string name="bnv_Spam">Spam</string>
+
+    <string name="hint_title">email address</string>
+    <string name="hint_subject">Subject</string>
+    <string name="title_main">Inbox</string>
+    <string name="button_save">Send Mail</string>
+    <string name="empty_not_saved">discarded</string>
+    <string name="hint_desc">…</string>
+    <string name="title_compose_mail">Compose Mail</string>
+
+    <string name="title_draft">Drafts</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nabil Nufail</string>
+    <string name="nav_header_subtitle">mnabilnuf@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_inbox">Inbox</string>
+    <string name="menu_draft">Draft</string>
+    <string name="menu_spam">Spam</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="delete">Delete</string>
+</resources>

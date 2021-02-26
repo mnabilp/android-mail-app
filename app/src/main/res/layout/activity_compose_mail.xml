@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical"
+    tools:context=".ui.ComposeMailActivity">
+
+    <ImageButton
+        android:id="@+id/btn_add_note_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_btn_back"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_addNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/product_sans_medium"
+        android:text="@string/title_compose_mail"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/btn_add_note_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email_compose_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_normal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_rectangle_curved"
+        android:fontFamily="@font/product_sans_regular"
+        android:hint="@string/hint_title"
+        android:inputType="textAutoComplete"
+        android:minHeight="@dimen/min_height"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrayLighter"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_addNote" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_subject_compose_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_normal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rectangle_curved"
+        android:fontFamily="@font/product_sans_regular"
+        android:hint="@string/hint_subject"
+        android:inputType="textAutoComplete"
+        android:minHeight="@dimen/min_height"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrayLighter"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_compose_mail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_content_compose_mail"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_margin="@dimen/padding_normal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rectangle_curved"
+        android:fontFamily="@font/product_sans_regular"
+        android:gravity="top"
+        android:hint="@string/hint_desc"
+        android:inputType="textMultiLine"
+        android:minHeight="@dimen/min_height"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrayLighter"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_subject_compose_mail" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send_compose_mail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/ic_send"
+        android:fontFamily="@font/product_sans_medium"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

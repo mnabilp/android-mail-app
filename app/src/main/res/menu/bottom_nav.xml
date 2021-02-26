@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bnv_home"
+        android:icon="@drawable/ic_email"
+        android:title="@string/app_name"
+        android:checked="true"/>
+    <item
+        android:id="@+id/bnv_draft"
+        android:icon="@drawable/ic_email"
+        android:title="@string/bnv_draft" />
+    <item
+        android:id="@+id/bnv_spam"
+        android:icon="@drawable/ic_email"
+        android:title="@string/bnv_Spam"/>
+</menu>
